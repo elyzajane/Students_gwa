@@ -6,7 +6,10 @@ file = open("students_gwa.txt", "r")
 # read the contents of the file into a str variable
 file_contents = file.read()
 # split the str variable into a list of lines
+lines = file_contents.split("\n")
 # initialize variables to store the highest GWA and the name of the student who got it
+highest_gwa = 0
+highest_gwa_student = ""
 # loop through each line in the file
 # split the line into two parts: the student's name and their GWA
 # convert the GWA from a string to a float
