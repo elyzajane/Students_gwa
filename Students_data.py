@@ -11,8 +11,15 @@ lines = file_contents.split("\n")
 highest_gwa = 0
 highest_gwa_student = ""
 # loop through each line in the file
+for line in lines:
 # split the line into two parts: the student's name and their GWA
+    name, gwa_str = line.split(",")
 # convert the GWA from a string to a float
+    gwa = float(gwa_str)
 # if this student has a higher GWA than the current highest GWA, update the variables
+    if gwa > highest_gwa:
+            highest_gwa = gwa
+            highest_gwa_student = name
 # close the file
+file.close()
 # print the output
