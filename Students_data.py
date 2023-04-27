@@ -1,6 +1,13 @@
 #Elyza Jane G. Relucio
 #The program reads a file with 20 students' names and GWAs, then outputs the name of the student with the highest GWA.
 
+import tkinter as tk
+
+# create a tkinter window
+root = tk.Tk()
+root.geometry("800x400")
+root.title("GWA Checker")
+
 # open the file containing the student data
 file = open("students_gwa.txt", "r")
 # read the contents of the file into a str variable
