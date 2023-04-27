@@ -23,3 +23,4 @@ for line in lines:
 # close the file
 file.close()
 # print the output
+print(f"The student with the highest GWA is {highest_gwa_student} with a GWA of {highest_gwa}.")
